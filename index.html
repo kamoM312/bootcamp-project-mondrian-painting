@@ -19,11 +19,90 @@
     HINT: Remember you can't change the properties of grid lines.
     But grid lines are transparent!
     */
+    * {
+      box-sizing: border-box;
+    }
+    .grid_container{
+      display: grid;
+      background-color: #f0f1ec;
+      grid-template-columns: 347px 401px;
+      grid-template-rows: 414px 285px 20px;;
+    }
+
+    .red {
+      background-color: #E72F24;
+      border-right: black 9px solid;
+      border-bottom: black solid 9px;
+    }
+
+    .big_empty {
+      border-bottom: black solid 9px;
+    }
+
+    .med_empty {
+      border-right: black 9px solid;
+      border-bottom: black solid 9px;
+    }
+
+    .inner_grid {
+      display: grid;
+      grid-template-columns: 351px 50px;
+      grid-template-rows: 130px 155px;
+    }
+
+    .inner_med1 {
+      border-right: black 9px solid;
+    }
+
+    .inner_small1 {
+      border-bottom: black solid 10px;
+      background-color: #004592;
+    }
+
+    .inner_med2 {
+      border-right: black 9px solid;
+      border-bottom: black solid 9px;
+    }
+
+    .mini_right {
+      display: grid;
+      grid-template-columns: 198px 153px 50px;
+    }
+
+    .mini_left {
+      border-right: black 9px solid;
+    }
+    .mini_r_left {
+      background-color: #F9D01E;
+    }
+
+    .mini_r_middle {
+      border-left: black 9px solid;
+      border-right: black 9px solid;
+      background-color: #232629;
+    }
   </style>
 </head>
 
 <body>
   <!-- Write your HTML here -->
+   <div class="grid_container">
+      <div class="red"></div>
+      <div class="big_empty"></div>
+      <div class="med_empty"></div>
+      <div class="inner_grid">
+        <div class="inner_med1"></div>
+        <div class="inner_small1"></div>
+        <div class="inner_med2"></div>
+        <div class="inner_small2"></div>
+      </div>
+      <div class="mini_left"></div>
+      <div class="mini_right">
+        <div class="mini_r_left"></div>
+        <div class="mini_r_middle"></div>
+        <div class="mini_r_right"></div>
+      </div>
+   </div>
 </body>
 
 </html>
